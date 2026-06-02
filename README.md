@@ -16,6 +16,15 @@ sbatch jupyter.sbatch
 squeue -u $USER          # wait until ST shows R (running)
 ```
 
+To make use of our REU reservation, you can use the following command to submit the job:
+
+```bash
+sbatch --reservation=physics_reu_2026 jupyter.sbatch
+squeue -u $USER
+```
+
+The reservation should be activated by the end of this week.
+
 ### 3. Read the connection details from the log
 
 ```bash
