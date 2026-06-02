@@ -2,6 +2,14 @@
 
 ## Recommended: batch job + VS Code "Existing Jupyter Server"
 
+### 0. Login to the RIS
+
+``` bash
+ssh <your_username>@c2-login-001.ris.wustl.edu
+```
+
+The password is your WashU key password.
+
 ### 1. Clone this repo on RIS
 
 ```bash
@@ -22,8 +30,6 @@ To make use of our REU reservation, you can use the following command to submit 
 sbatch --reservation=physics_reu_2026 jupyter.sbatch
 squeue -u $USER
 ```
-
-The reservation should be activated by the end of this week.
 
 ### 3. Read the connection details from the log
 
